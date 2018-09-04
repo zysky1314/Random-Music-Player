@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="referrer" content="no-referrer">
+	<link rel="stylesheet" href="music_index_pc.css" media="(min-width:980px)">
+	<link rel="stylesheet" href="wap_music_index.css" media=" (max-width:619px)">
+	<link rel="stylesheet" href="font.css">
+	<link rel="icon" href="music_icon.jpg">
+	<script src="jquery-1.12.4.min.js"></script>
+	<title>Music Random</title>
+</head>
+<body>
+	<div id='wx_logo' style='margin:0 auto;display:none;'>
+		<img src="music_icon.jpg"/>
+	</div>
+	<div class="wrapper">
+		<!-- 背景图片 -->
+		 <div class="background">
+		 	<div class="music-lyric" style="display:block">
+		 		<div class="lyric-view">
+		 			<ul class="lyric"></ul>
+		 		</div>
+		 	</div>
+		 </div>
+		 <div class="content">
+			<audio src=""></audio>
+			<div class="music-massage">
+				<p class="musicname" title=""></p>
+				<p class="musicer" title=""></p>
+				<p class="record" title="" data-id=""></p>
+			</div>
+			<!-- 分享，收藏，喜欢按钮 -->
+			<div class="music-icon">
+				<a class="m-icon m-fenxiang colored" href="http://service.weibo.com/share/share.php?title=#_loginLayer_1466697157538" target="new"></a>
+				<span class="m-icon m-star colored"></span>
+				<span class="m-icon m-heart colored"></span>
+			</div>
+		</div>
+		<!-- 进度条 -->
+		<span class="basebar">
+			<span class="progressbar"></span>
+		</span>
+		<div class="controls">
+			<!-- 音乐播放。换频道，下一曲按钮 -->
+			<div class="play-control">
+				<span class="m-icon m-play btn1" title="播放/暂停"></span>
+				<span class="m-icon m-change btn2" title="换频道"></span>
+				<span class="m-icon m-next btn3" title="换曲"></span>
+			</div>
+			<!-- 循环播放，随机播放按钮 -->
+			<div class="music-control">
+				<span class="m-icon m-xunhuan colored"></span>
+				<span class="m-icon m-lyric colored lyriced"></span>
+			</div>			
+		</div>
+	</div>
+	<script src="Random-music.js"></script>
+</body>
+</html>
+
